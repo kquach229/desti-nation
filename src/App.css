@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  font-family: 'Bellota', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color:tomato ;
+  height: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.homeContainer {
   min-height: 100vh;
+  background-image: url("./assets/images/flat-earth.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#countryInput {
+  background-color: blanchedalmond;
+  opacity:0.9;
+  padding: 20px;
+  border: 2px solid #347aeb;
+  color: #347aeb;
+  font-size: 18px;
+  font-family:'Bellota', cursive; 
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countryList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.flag__image {
+  height: 200px;
+}
+
+.card {
+  background-color: floralwhite;
+  height: 300px;
+}
+
+.card:hover {
+  cursor: pointer;
+  height: 300px;
+  background-color: #347aeb;
+  color: white;
+  
+}
+
+.itemCount {
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.countrify-logo {
+  height: 70px;
+}
+
+.countryPageFlag  {
+  height: 300px;
+  border: 2px solid black;
+}
+
+.countryPageBack {
+  background-image: url("./assets/images/simon-migaj-Yui5vfKHuzs-unsplash.jpg");
+  background-size: cover;
+  color: antiquewhite;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.basicDesc {
+  color: firebrick;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.countryPageTitle {
+  color: coral;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: tomato;
+}
+
+.countryAndFlag {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.countryBasics {
+  background-color: coral;
+  width: 80vw;
+  height: 300px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 100px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.countryRegion {
+  background-color: coral;
+  width: 80vw;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 100px 0px;
+
+}
+
+
+.countryOthers {
+  background-color: coral;
+  padding: 10px;
+  margin: 100px 0px;
+  width: 80vw;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  text-decoration: underline;
+}
+
+.propertyName {
+  color: black;
+  font-weight: bold;
+}
+
+span.propertyValue {
+  color: #347aeb;
+
 }
