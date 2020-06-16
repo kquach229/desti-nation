@@ -19,6 +19,9 @@ class Home extends React.Component {
     }
 
     handleSubmit = (e) => {
+        if(this.state.countryList.length >= 1) {
+            return <h1>NO Country</h1>
+        }
         e.preventDefault();
         axios.get(`https://restcountries.eu/rest/v2/name/${this.state.country}`)
             .then((res)=> {
@@ -37,12 +40,12 @@ class Home extends React.Component {
                  <NavBar/>
                  <div className="homeContainer">
                     <div className="container">
-                    <h1>Countrify</h1>
+                    <h1>DestiNation</h1>
                         <form onSubmit={this.handleSubmit}>
                             <input placeholder="search for a country" id="countryInput" type="text" onChange={this.handleChange}/>
                             <button 
                                 type="submit"
-                                className="btn waves-effect waves-light"
+                                className="btn waves-effect waves-light submitSearchButton"
                                 >
                                     Submit
                                 </button>

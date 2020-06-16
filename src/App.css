@@ -1,6 +1,13 @@
 * {
   margin: 0;
   font-family: 'Bellota', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #3a4052
 }
 
 nav {
@@ -16,6 +23,10 @@ nav {
   flex-direction: column;
   text-align: center;
   opacity: 0.9;
+}
+
+.submitSearchButton {
+  margin-top: 50px;
 }
 
 #countryInput {
@@ -63,11 +74,13 @@ form {
 }
 
 .itemCount {
-  color: antiquewhite;
+  color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
+  margin: 20px 0;
+  
 }
 
 .countrify-logo {
@@ -82,7 +95,6 @@ form {
 .countryPageBack {
   background-image: url("./assets/images/simon-migaj-Yui5vfKHuzs-unsplash.jpg");
   background-size: cover;
-  color: antiquewhite;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
@@ -105,43 +117,45 @@ form {
 }
 
 .countryAndFlag {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 100px;
 }
 
 .countryBasics {
   background-color: coral;
-  width: 80vw;
+  width: 60vw;
   height: 300px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 100px 0px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
+ 
 }
 
 .countryRegion {
   background-color: coral;
-  width: 80vw;
+  width: 60vw;
+  height: 300px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 100px 0px;
-
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
 }
 
 
 .countryOthers {
   background-color: coral;
-  padding: 10px;
-  margin: 100px 0px;
-  width: 80vw;
+  width: 60vw;
+  height: 300px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
 }
 
 .sectionTitle {
@@ -155,5 +169,93 @@ form {
 
 span.propertyValue {
   color: #347aeb;
+}
 
+.galleryContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.imageItem1 {
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+.imageItem2 {
+
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+.imageItem3 {
+
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+.imageItem4 {
+
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+.imageItem5 {
+
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+
+.imageItem6 {
+
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+
+.imageItem7 {
+
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+
+
+.imageItem8 {
+
+  height: 350px;
+  width: 400px;
+  margin: 5px;
+  border: 2px solid white;
+}
+
+.countryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  
+  margin-bottom: 50px;
+}
+
+.landingContainer {
+  height: 100vh;
+  background-image: url("./assets/images/destination.jpg");
+  background-size: cover;
 }

@@ -1,11 +1,14 @@
 import React from "react";
 
-const Landing = () => {
+const Landing = (props) => {
+
+    const goToHome = () => {
+        props.history.push("/home")
+    }
     return(
-        <div>
-            <div className="video-container">
-                <video src="video.mv" autoPlay muted loop></video>
-            </div>
+        <div className="landingContainer">
+            <h1>Landing</h1>
+            <button onClick={goToHome}>Explore</button>
         </div>
     )
 }
