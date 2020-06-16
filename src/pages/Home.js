@@ -8,10 +8,16 @@ class Home extends React.Component {
 
     state = {
         country: "",
-        countryList: []
+        countryList: [],
+        error: null
     }
 
     handleChange = (e) => {
+        if(!this.state.countryList) {
+            return this.setState({
+                error: "Enter a valid country"
+            }) 
+        } 
         this.setState({
             country: e.target.value,
         })
@@ -19,9 +25,6 @@ class Home extends React.Component {
     }
 
     handleSubmit = (e) => {
-        if(this.state.countryList.length >= 1) {
-            return <h1>NO Country</h1>
-        }
         e.preventDefault();
         axios.get(`https://restcountries.eu/rest/v2/name/${this.state.country}`)
             .then((res)=> {
@@ -35,6 +38,8 @@ class Home extends React.Component {
     }
 
     render() {
+
+       
         return (
             <div>
                  <NavBar/>
