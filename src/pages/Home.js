@@ -9,15 +9,10 @@ class Home extends React.Component {
     state = {
         country: "",
         countryList: [],
-        error: null
     }
 
     handleChange = (e) => {
-        if(!this.state.countryList) {
-            return this.setState({
-                error: "Enter a valid country"
-            }) 
-        } 
+        
         this.setState({
             country: e.target.value,
         })
@@ -25,6 +20,11 @@ class Home extends React.Component {
     }
 
     handleSubmit = (e) => {
+        if(!this.state.countryList) {
+            return this.setState({
+                error: "Enter a valid country"
+            }) 
+        } 
         e.preventDefault();
         axios.get(`https://restcountries.eu/rest/v2/name/${this.state.country}`)
             .then((res)=> {
