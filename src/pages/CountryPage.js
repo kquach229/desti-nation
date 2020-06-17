@@ -53,7 +53,12 @@ class CountryPage extends React.Component{
 
        
         return(
-            <div className="countryPageBack">
+            <div style={{  
+                backgroundImage: "url(" + `${this.state.photos.results[9].urls.full}` + ")",
+                backgroundPosition: 'center',
+                backgroundSize:"stretch",
+                backgroundRepeat: 'no-repeat'
+              }} className="countryPageBack">
                 <NavBar/>
                  <div className="countryContainer">
                      <div className="countryAndFlag animate__bounceIn">
