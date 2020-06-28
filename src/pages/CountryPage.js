@@ -86,14 +86,14 @@ class CountryPage extends React.Component{
                         <div className="propertyName">Main Domain: <span className="propertyValue">{this.state.country.topLevelDomain}</span></div>
                     </div>
                    <div data-aos="zoom-in" className="galleryContainer">
-                       <img className="imageItem1" src={this.state.photos.results[0].urls.small}/>
-                       <img className="imageItem2" src={this.state.photos.results[1].urls.small}/>
-                       <img className="imageItem3" src={this.state.photos.results[2].urls.small}/>
-                       <img className="imageItem4" src={this.state.photos.results[3].urls.small}/>
-                       <img className="imageItem5" src={this.state.photos.results[4].urls.small}/>
-                       <img className="imageItem6" src={this.state.photos.results[6].urls.small}/>
-                       <img className="imageItem7" src={this.state.photos.results[7].urls.small}/>
-                       <img className="imageItem8" src={this.state.photos.results[8].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[0].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[1].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[2].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[3].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[4].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[6].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[7].urls.small}/>
+                       <img className="imageItem" src={this.state.photos.results[8].urls.small}/>
                    </div>
             </div>
             <Footer/>

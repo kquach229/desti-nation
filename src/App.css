@@ -16,10 +16,18 @@ nav {
   flex-direction: column;
   text-align: center;
   opacity: 0.9;
+  color: azure;
 }
+
 
 .submitSearchButton {
   margin-top: 50px;
+}
+
+.errorMessage {
+  color: wheat;
+  font-weight: bold;
+  width: 100%;
 }
 
 #countryInput {
@@ -61,6 +69,7 @@ form {
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    transition: 1.2s;
+   color: black;
  
 }
 
@@ -189,65 +198,17 @@ span.propertyValue {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 100px;
+  width: 100%;
+  height: 100%;
 }
 
-.imageItem1 {
-  width: 400px;
-  height: 300px;
+.imageItem {
+  width: 22%;
+  height: 22%;
   margin: 5px;
   border: 2px solid white;
 }
 
-.imageItem2 {
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  border: 2px solid white;
-}
-
-.imageItem3 {
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  border: 2px solid white;
-}
-.imageItem4 {
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  border: 2px solid white;
-}
-.imageItem5 {
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  border: 2px solid white;
-}
-
-
-.imageItem6 {
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  border: 2px solid white;
-}
-
-
-.imageItem7 {
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  border: 2px solid white;
-}
-
-
-
-.imageItem8 {
-  width: 400px;
-  height: 300px;
-  margin: 5px;
-  border: 2px solid white;
-}
 
 .countryContainer {
   display: flex;
@@ -269,4 +230,17 @@ span.propertyValue {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+@media  screen and (max-width:1290px) {
+  .imageItem {
+    width: 46%;
+  }
+}
+
+@media  screen and (max-width:768px) {
+  .imageItem {
+    width: 92%;
+  }
 }

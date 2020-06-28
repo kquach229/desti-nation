@@ -9,6 +9,7 @@ class Home extends React.Component {
     state = {
         country: "",
         countryList: [],
+        error: ""
     }
 
     handleChange = (e) => {
@@ -20,11 +21,7 @@ class Home extends React.Component {
     }
 
     handleSubmit = (e) => {
-        if(!this.state.countryList) {
-            return this.setState({
-                error: "Enter a valid country"
-            }) 
-        } 
+       
         e.preventDefault();
         axios.get(`https://restcountries.eu/rest/v2/name/${this.state.country}`)
             .then((res)=> {
@@ -34,12 +31,18 @@ class Home extends React.Component {
                 })
                 console.log(this.state.countryList)
             });
-           
+           if(this.state.countryList == "") {
+                this.setState({
+                    error:"No matches found for your input"
+                })
+           }
+          
     }
 
-    render() {
+    
 
-       
+    render() {
+        
         return (
             <div>
                  <NavBar/>
@@ -58,6 +61,7 @@ class Home extends React.Component {
                         <CountryList 
                             countries={this.state.countryList} 
                             />
+                    <h4 className="errorMessage">{this.state.error}</h4>
                     </div>
             </div> 
             <Footer/>  
