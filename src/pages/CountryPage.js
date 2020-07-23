@@ -134,42 +134,42 @@ class CountryPage extends React.Component {
           </div>
           <div data-aos="zoom-in" className="galleryContainer">
             <img
-              alt="image"
+              alt="image1"
               className="imageItem"
               src={this.state.photos.results[0].urls.small}
             />
             <img
-              alt="image"
+              alt="image2"
               className="imageItem"
               src={this.state.photos.results[1].urls.small}
             />
             <img
-              alt="image"
+              alt="image3"
               className="imageItem"
               src={this.state.photos.results[2].urls.small}
             />
             <img
-              alt="image"
+              alt="image4"
               className="imageItem"
               src={this.state.photos.results[3].urls.small}
             />
             <img
-              alt="image"
+              alt="image5"
               className="imageItem"
               src={this.state.photos.results[4].urls.small}
             />
             <img
-              alt="image"
+              alt="image6"
               className="imageItem"
               src={this.state.photos.results[6].urls.small}
             />
             <img
-              alt="image"
+              alt="image7"
               className="imageItem"
               src={this.state.photos.results[7].urls.small}
             />
             <img
-              alt="image"
+              alt="image8"
               className="imageItem"
               src={this.state.photos.results[8].urls.small}
             />
