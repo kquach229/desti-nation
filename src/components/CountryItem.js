@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 
 const CountryItem = (props) => {
-  const { match, location, history } = props;
+  const { history } = props;
 
   const onClickFlag = (e) => {
     e.preventDefault();

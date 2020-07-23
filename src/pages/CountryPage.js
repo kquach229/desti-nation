@@ -5,7 +5,6 @@ import NavBar from "../components/NavBar";
 import AOS from "aos";
 
 const Access_Key = "0InqypeOVs3S3e3UvXqyzgloNgC1pScmHmATq8zeHDs";
-const Secret_Key = "kkqnG2MvkCW9H0-tzidQ3nYsxMbWDzNjE3dTeMFDCYE";
 
 class CountryPage extends React.Component {
   state = {
@@ -51,8 +50,7 @@ class CountryPage extends React.Component {
     return (
       <div
         style={{
-          backgroundImage:
-            "url(" + `${this.state.photos.results[9].urls.full}` + ")",
+          backgroundImage: `url(${this.state.photos.results[9].urls.full})`,
           height: "auto",
           backgroundSize: "stretch",
           backgroundRepeat: "repeat",
@@ -63,7 +61,11 @@ class CountryPage extends React.Component {
         <div className="countryContainer">
           <div className="countryAndFlag animate__bounceIn">
             <h1 className="countryPageTitle">{`${this.props.match.params.name} - (${this.state.country.nativeName})`}</h1>
-            <img className="countryPageFlag" src={this.state.country.flag} />
+            <img
+              alt="countryFlag"
+              className="countryPageFlag"
+              src={this.state.country.flag}
+            />
           </div>
           <div data-aos="fade-left" className="countryBasics">
             <h3 className="sectionTitle">Basic Info</h3>
